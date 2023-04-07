@@ -1,12 +1,23 @@
 # Integrations
 
+## Setup Environment
+
+Create a `.env` file with the contents of `.env.template` and fill in the values you need.
+
 ## UI
 
-The UI is located mostly on the top level page located in `./src/routes/+page.svelte`.
+Majority of the UI is located on the top level page in `./src/routes/+page.svelte`.
+
+### Run locally
+
+```
+npm i
+npm run dev
+```
 
 ## Twitter Auth
 
-### Required `.env`
+#### Required `.env`
 
 All of the TWITTER values in `.env.template` and a JWT Secret.
 
