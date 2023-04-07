@@ -1,6 +1,6 @@
 # Integrations
 
-# UI
+## UI
 
 The UI is located mostly on the top level page located in `./src/routes/+page.svelte`.
 
