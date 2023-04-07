@@ -65,7 +65,7 @@ const getTwitterUser = async (bearer: string) => {
 };
 
 export async function GET({ url }: RequestEvent) {
-    const state = token.decode(url.searchParams.get("state"));
+    const state = token.decode(url.searchParams.get("state") || "");
 
     const bearer = await getBearer(url);
 

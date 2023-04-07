@@ -38,6 +38,7 @@
         <p class="text-xs text-orange-500">{twitterAuthUrl}</p>
         <a
             class="btn-sm btn bg-blue-500 text-white"
+            target="_blank"
             href={twitterAuthUrl}>Visit Twitter Auth URL</a
         >
     </div>
