@@ -9,6 +9,7 @@
             const response = await fetch("/api/auth/twitter/stage");
             ({ url: twitterAuthUrl } = await response.json());
         } catch (error) {
+            // eslint-disable-next-line no-console
             console.error(error);
         }
 
