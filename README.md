@@ -17,6 +17,10 @@ npm run dev
 
 ## Twitter Auth
 
+
+https://user-images.githubusercontent.com/59782726/230544811-6006c072-fd7a-453e-b684-f8515870e580.mov
+
+
 #### Required `.env`
 
 All of the TWITTER values in `.env.template` and a JWT Secret.
