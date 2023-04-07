@@ -18,7 +18,9 @@ npm run dev
 ## Twitter Auth
 
 
-https://user-images.githubusercontent.com/59782726/230544811-6006c072-fd7a-453e-b684-f8515870e580.mov
+https://user-images.githubusercontent.com/59782726/230545056-0256c412-08e3-496f-a348-e56ea1e62638.mov
+
+
 
 
 #### Required `.env`
