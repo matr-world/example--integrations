@@ -6,6 +6,15 @@ The UI is located mostly on the top level page located in `./src/routes/+page.sv
 
 ## Twitter Auth
 
+### Required `.env`
+
+All of the TWITTER values in `.env.template` and a JWT Secret.
+
+```
+ENV_TWITTER_*
+ENV_JWT_SECRET=something-secret
+```
+
 ### Stage URL
 
 First we need to use environment variables and state to generate an auth URL that we will visit.
