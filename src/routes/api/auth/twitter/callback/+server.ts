@@ -11,7 +11,7 @@ const {
     ENV_TWITTER_OAUTH_CALLBACK,
 } = env;
 
-const getBearer = async (url: URL) => {
+const getAuthentication = async (url: URL) => {
     const oauthCode = url.searchParams.get("code") || "";
 
     // Will build this along the way
@@ -40,7 +40,7 @@ const getBearer = async (url: URL) => {
 
     const authentication = await response.json();
 
-    return authentication.access_token;
+    return authentication;
 };
 
 const getTwitterUser = async (bearer: string) => {
@@ -67,14 +67,14 @@ const getTwitterUser = async (bearer: string) => {
 export async function GET({ url }: RequestEvent) {
     const state = token.decode(url.searchParams.get("state") || "");
 
-    const bearer = await getBearer(url);
+    const authentication = await getAuthentication(url);
 
-    const user = await getTwitterUser(bearer);
+    const user = await getTwitterUser(authentication.access_token);
 
     return new Response(
         JSON.stringify(
             {
-                bearer,
+                authentication,
                 state,
                 url,
                 user,
