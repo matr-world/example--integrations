@@ -18,7 +18,14 @@
 </script>
 
 <div class="my-4">
-    <h1 class="text-4xl font-bold">Integrations</h1>
+    <div class="flex items-center justify-between">
+        <h1 class="text-4xl font-bold">Integrations</h1>
+        <a
+            href="https://github.com/matr-world/integrations"
+            target="_blank"
+            class="btn">Github</a
+        >
+    </div>
     <p class="">Example integrations with various services.</p>
 </div>
 <div class="rounded-xl border border-gray-600 p-5">
