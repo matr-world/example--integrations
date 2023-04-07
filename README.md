@@ -8,7 +8,7 @@ Create a `.env` file with the contents of `.env.template` and fill in the values
 
 Majority of the UI is located on the top level page in `./src/routes/+page.svelte`.
 
-### Run locally
+#### Run
 
 ```
 npm i
