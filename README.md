@@ -1,0 +1,2 @@
+# auth
+Example auth patterns. 
